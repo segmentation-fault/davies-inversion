@@ -1,10 +1,12 @@
 # davies-inversion
-This Matlab function performs the numerical inversion of a symbolic expression representing a Characteristic function of a discrete distribution, and outputs the discrete CDF over a custom range. 
+These Matlab functions perform the numerical inversion of a symbolic expression representing a Characteristic function of a discrete/continuous distribution, and outputs the discrete/continuous CDF over a custom range. 
 Files:
-- Davies_inversion.m : Actual function performing the inversion
-- HOWTO.m : Script demonstrating how to use the function.
+- Davies_inversion_discrete.m : Function performing the inversion for discrete RVs
+- example_discrete.m : Script demonstrating how to use the function for discrete RVs
+- Davies_inversion_continuous.m : Function performing the inversion for continuous RVs
+- example_continuous.m : Script demonstrating how to use the function for continuous RVs.
 
- It needs the Matlab (R) Symbolic Toolbox. Tested on Matlab r2016b.
+ It needs the Matlab (R) Symbolic Toolbox. Tested on Matlab r2016b and r2017b.
  
    Copyright (C) 2017  Antonio Franco
 

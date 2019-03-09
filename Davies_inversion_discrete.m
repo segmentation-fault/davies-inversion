@@ -1,5 +1,5 @@
- function [ CDF ] = Davies_inversion( CF, my_range )
-%function [ CDF ] = Davies_invertion( CF, my_range )
+ function [ CDF ] = Davies_inversion_discrete( CF, my_range )
+%function [ CDF ] = Davies_inversion_discrete( CF, my_range )
 %   Numerically inverts the Characteristic function CF (sym object) over the range
 %   my_range. It outputs the discrete CDF. symvar(CF) must not be called x. 
 %   INPUT:

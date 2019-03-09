@@ -1,4 +1,4 @@
-%Example on how to use Davies_inversion.m
+%Example on how to use Davies_inversion_discrete.m
 
 clc
 clear
@@ -10,7 +10,7 @@ b = 10;
 n = b-a+1;
 CF1 = (exp(1i*a*t) - exp(1i*(b+1)*t))/(n*(1-exp(1i*t)));
 my_range = a-2:b+2;
-CDF = Davies_inversion( CF1, my_range );
+CDF = Davies_inversion_discrete( CF1, my_range );
 figure
 subplot(2,2,1);
 stairs(my_range,CDF, 'o--');
@@ -23,7 +23,7 @@ title('PMF - discrete uniform')
 %Discrete triangular
 CF2 = CF1 * CF1;
 my_range = 2*a-3:2*b+3;
-CDF = Davies_inversion( CF2, my_range );
+CDF = Davies_inversion_discrete( CF2, my_range );
 subplot(2,2,3);
 stairs(my_range,CDF, 'o--');
 title('CDF - discrete triangular')
